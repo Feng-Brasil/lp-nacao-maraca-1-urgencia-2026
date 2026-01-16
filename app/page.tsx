@@ -18,7 +18,7 @@ export default function Home() {
             />
           </div>
           <a 
-            href="#planos" 
+            href="https://nacao.flamengo.com.br/checkout/cart/subscribe/1c9b172de533f5422fd04b7eaa056ecc" 
             className="bg-[#c40000] text-white px-6 py-2 rounded-sm font-bebas text-lg tracking-widest hover:bg-white hover:text-[#c40000] transition-all duration-300"
           >
             ASSINE AGORA
@@ -41,9 +41,6 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
-            <div className="inline-block bg-[#c40000] text-white px-4 py-1 rounded-sm mb-6 text-sm font-bold tracking-widest uppercase">
-              ⚠️ URGÊNCIA TEMPORADA 2026
-            </div>
             <h1 className="text-5xl md:text-8xl font-bebas leading-[0.95] mb-6 uppercase tracking-tight">
               FECHADO COM O NAÇÃO <br />
               <span className="text-[#c40000]">DESDE O INÍCIO DA TEMPORADA</span>
@@ -53,7 +50,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="#planos" 
+                href="https://nacao.flamengo.com.br/checkout/cart/subscribe/1c9b172de533f5422fd04b7eaa056ecc" 
                 className="bg-[#c40000] text-white text-center px-10 py-4 rounded-sm font-bebas text-2xl tracking-widest hover:bg-white hover:text-[#c40000] transition-all transform hover:scale-105 active:scale-95"
               >
                 SEJA NAÇÃO MARACA 1 AGORA!
@@ -139,11 +136,12 @@ export default function Home() {
                 </li>
               </ul>
 
-              <form action="#">
-                <button className="w-full bg-[#000000] text-white py-5 rounded-sm font-bebas text-3xl tracking-widest hover:bg-[#c40000] transition-colors shadow-lg">
-                  QUERO MINHA VAGA EM 2026!
-                </button>
-              </form>
+              <a 
+                href="https://nacao.flamengo.com.br/checkout/cart/subscribe/1c9b172de533f5422fd04b7eaa056ecc" 
+                className="block w-full bg-[#000000] text-white py-5 rounded-sm font-bebas text-3xl tracking-widest hover:bg-[#c40000] transition-colors shadow-lg text-center"
+              >
+                QUERO MINHA VAGA EM 2026!
+              </a>
               
               <p className="text-center mt-6 text-sm text-gray-500 font-bold uppercase tracking-widest">
                 ⏳ Oferta expira em 28 de fevereiro
