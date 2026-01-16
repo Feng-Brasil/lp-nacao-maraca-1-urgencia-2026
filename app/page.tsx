@@ -77,7 +77,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 flex justify-center">
               <img 
-                src="https://images.mengo.com.br/prod/assets/images/2025/landing/exp-ingressos.png" 
+                src="https://images.mengo.com.br/prod/assets/images/2025/landing/scroll-flavaloriza-bh.png" 
                 alt="Experiência Ingressos Nação" 
                 className="max-w-full h-auto rounded-sm shadow-2xl border border-[#c40000]/20"
               />
@@ -105,38 +105,37 @@ export default function Home() {
               <h3 className="text-white text-4xl font-bebas tracking-widest uppercase">
                 NAÇÃO MARACA 1 - TEMPORADA 2026
               </h3>
-              <p className="text-white/90 mt-2 font-bold uppercase text-sm tracking-widest">O plano definitivo para quem vive o Flamengo</p>
             </div>
             
             <div className="p-10 text-[#000000]">
               <div className="flex justify-center items-baseline mb-10">
-                <span className="text-2xl font-bold mr-1">R$</span>
-                <span className="text-8xl font-bebas tracking-tighter">325,40</span>
-                <span className="text-xl font-bold text-gray-500 ml-2">/mês</span>
+                <span className="text-xl font-bold mr-1">R$</span>
+                <span className="text-6xl font-bebas tracking-tighter">325,40</span>
+                <span className="text-lg font-bold text-gray-500 ml-2">/mês</span>
               </div>
 
               <ul className="space-y-4 mb-10">
-                <li className="flex items-start gap-3 font-bold border-b border-gray-100 pb-3">
+                <li className="flex items-start gap-3 border-b border-gray-100 pb-3">
                   <span className="text-[#c40000] mt-1">✓</span> 
                   <span>Prioridade 1 na compra de ingressos para jogos no Maracanã como mandante e como visitante</span>
                 </li>
-                <li className="flex items-start gap-3 font-bold border-b border-gray-100 pb-3">
+                <li className="flex items-start gap-3 border-b border-gray-100 pb-3">
                   <span className="text-[#c40000] mt-1">✓</span> 
                   <span>75% de desconto no valor da inteira</span>
                 </li>
-                <li className="flex items-start gap-3 font-bold border-b border-gray-100 pb-3">
+                <li className="flex items-start gap-3 border-b border-gray-100 pb-3">
                   <span className="text-[#c40000] mt-1">✓</span> 
                   <span>Plano limitado a 10.000 titulares, com garantia de compra de ingressos para o Maracanã em sua onda de prioridade</span>
                 </li>
-                <li className="flex items-start gap-3 font-bold border-b border-gray-100 pb-3">
+                <li className="flex items-start gap-3 border-b border-gray-100 pb-3">
                   <span className="text-[#c40000] mt-1">✓</span> 
                   <span>Direito de contratação de até 3 convidados por R$50,00/mês cada, com compra na mesma prioridade do titular</span>
                 </li>
-                <li className="flex items-start gap-3 font-bold border-b border-gray-100 pb-3">
+                <li className="flex items-start gap-3 border-b border-gray-100 pb-3">
                   <span className="text-[#c40000] mt-1">✓</span> 
                   <span>Rating que valoriza o tempo de permanência</span>
                 </li>
-                <li className="flex items-start gap-3 font-bold">
+                <li className="flex items-start gap-3">
                   <span className="text-[#c40000] mt-1">✓</span> 
                   <span>Direito a compra do Pacote Maracanã anual</span>
                 </li>
@@ -181,8 +180,7 @@ export default function Home() {
                 className="h-12 w-auto opacity-40" 
               />
               <p className="text-[10px] text-gray-500 uppercase tracking-[0.2em] leading-relaxed max-w-xs md:text-left">
-                © 2025 CLUBE DE REGATAS DO FLAMENGO. <br />
-                TODOS OS DIREITOS RESERVADOS.
+                © 2026 CLUBE DE REGATAS DO FLAMENGO.
               </p>
             </div>
           </div>
