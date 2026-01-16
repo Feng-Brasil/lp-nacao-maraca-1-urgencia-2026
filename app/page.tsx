@@ -27,16 +27,16 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-12 md:pt-48 md:pb-16 overflow-hidden min-h-[85vh] flex items-center">
-        {/* Background Image - Atualizado conforme solicitação */}
+      <section className="relative pt-32 pb-12 md:pt-48 md:pb-16 overflow-hidden min-h-screen flex items-center">
+        {/* Background Image - Garantindo preenchimento total do primeiro scroll */}
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.mengo.com.br/prod/assets/images/2025/img-bg-rtn.png" 
             alt="Background Nação"
-            className="w-full h-full object-cover grayscale-[0.3] brightness-[0.4]"
+            className="w-full h-full object-cover object-center brightness-[0.5]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/60 to-[#c40000]/30"></div>
-          <div className="absolute inset-0 bg-[#c40000]/10 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-[#000000]/20"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
