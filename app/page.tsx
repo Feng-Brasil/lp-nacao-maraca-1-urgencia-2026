@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Prioridade Máxima Section (Substituindo Benefícios) */}
+      {/* Prioridade Máxima Section */}
       <section className="py-24 bg-[#111111]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -75,11 +75,11 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 flex justify-center">
               <img 
                 src="https://images.mengo.com.br/prod/assets/images/2025/landing/exp-ingressos.png" 
                 alt="Experiência Ingressos Nação" 
-                className="w-full h-auto rounded-sm shadow-2xl border border-[#c40000]/20"
+                className="max-w-full h-auto rounded-sm shadow-2xl border border-[#c40000]/20"
               />
             </div>
             <div className="order-1 md:order-2 space-y-8">
