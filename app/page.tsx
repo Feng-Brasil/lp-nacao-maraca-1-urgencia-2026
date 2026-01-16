@@ -27,7 +27,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden min-h-screen flex items-center">
+      <section className="relative pt-32 pb-12 md:pt-48 md:pb-16 overflow-hidden min-h-[85vh] flex items-center">
         {/* Background Image - Torcida do Flamengo no Maracanã */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -65,7 +65,7 @@ export default function Home() {
       </section>
 
       {/* Prioridade Máxima Section */}
-      <section className="pt-24 pb-12 md:pb-24 bg-[#111111]">
+      <section className="pt-12 pb-12 md:pt-16 md:pb-24 bg-[#111111]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bebas mb-4 tracking-widest uppercase">
