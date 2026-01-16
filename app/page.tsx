@@ -16,9 +16,6 @@ export default function Home() {
               alt="Logo Nação" 
               className="h-12 w-auto"
             />
-            <span className="text-2xl font-bebas tracking-wider uppercase hidden sm:block">
-              NAÇÃO <span className="text-[#c40000]">MARACA</span>
-            </span>
           </div>
           <a 
             href="#planos" 
@@ -30,24 +27,29 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-40">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-[#c40000]/20"></div>
-          <div className="absolute inset-0 bg-[#c40000]/5 mix-blend-overlay"></div>
+      <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden min-h-screen flex items-center">
+        {/* Background Image - Torcida do Flamengo no Maracanã */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1624361514002-998897950361?q=80&w=2070&auto=format&fit=crop" 
+            alt="Torcida do Flamengo no Maracanã"
+            className="w-full h-full object-cover grayscale-[0.5] brightness-[0.3]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/60 to-[#c40000]/30"></div>
+          <div className="absolute inset-0 bg-[#c40000]/10 mix-blend-multiply"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="max-w-3xl">
+          <div className="max-w-4xl">
             <div className="inline-block bg-[#c40000] text-white px-4 py-1 rounded-sm mb-6 text-sm font-bold tracking-widest uppercase">
               ⚠️ URGÊNCIA TEMPORADA 2026
             </div>
-            <h1 className="text-6xl md:text-9xl font-bebas leading-[0.9] mb-6 uppercase tracking-tight">
-              O TEMPLO TE <br />
-              <span className="text-[#c40000]">CONVOCA.</span>
+            <h1 className="text-5xl md:text-8xl font-bebas leading-[0.95] mb-6 uppercase tracking-tight">
+              FECHADO COM O NAÇÃO <br />
+              <span className="text-[#c40000]">DESDE O INÍCIO DA TEMPORADA</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed font-light">
-              A história não espera. Garanta sua prioridade máxima no Maracanã para 2026. 
-              O prazo final para o plano <span className="text-white font-bold underline decoration-[#c40000]">Nação Maraca 1</span> se encerra em 28 de fevereiro.
+            <p className="text-xl md:text-2xl text-gray-200 mb-10 leading-relaxed font-light max-w-2xl">
+              Em 2026, as adesões ao <span className="text-white font-bold underline decoration-[#c40000]">Nação Maraca 1</span> estarão abertas apenas até 28/2. A hora é agora!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
@@ -56,7 +58,7 @@ export default function Home() {
               >
                 SEJA NAÇÃO MARACA 1 AGORA!
               </a>
-              <div className="flex items-center gap-3 px-4 py-2 border border-white/10 rounded-sm bg-white/5">
+              <div className="flex items-center gap-3 px-4 py-2 border border-white/20 rounded-sm bg-black/40 backdrop-blur-sm">
                 <span className="text-[#c40000] text-2xl animate-pulse">●</span>
                 <span className="text-sm font-medium uppercase tracking-tighter">Vagas limitadas para 2026</span>
               </div>
