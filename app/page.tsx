@@ -174,14 +174,12 @@ export default function Home() {
               <a href="https://nacao.flamengo.com.br/politica-de-privacidade" className="hover:text-white transition-colors">Política de Privacidade</a>
             </div>
 
-            <div className="flex items-center gap-8 mb-10 opacity-50 grayscale">
-              <img src="https://images.mengo.com.br/prod/assets/images/2025/logo-visa.png" alt="Visa" className="h-4 w-auto" />
-              <img src="https://images.mengo.com.br/prod/assets/images/2025/logo-mastercard.png" alt="Mastercard" className="h-6 w-auto" />
-              <img src="https://images.mengo.com.br/prod/assets/images/2025/logo-pix.png" alt="Pix" className="h-4 w-auto" />
-            </div>
-
             <div className="flex flex-col md:flex-row items-center gap-6 pt-8 border-t border-white/5 w-full justify-center">
-              <img src="https://images.mengo.com.br/prod/assets/images/2025/logo-crf.png" alt="CRF" className="h-12 w-auto opacity-40" />
+              <img 
+                src="https://images.mengo.com.br/prod/assets/images/shield-mark.png" 
+                alt="CRF" 
+                className="h-12 w-auto opacity-40" 
+              />
               <p className="text-[10px] text-gray-500 uppercase tracking-[0.2em] leading-relaxed max-w-xs md:text-left">
                 © 2025 CLUBE DE REGATAS DO FLAMENGO. <br />
                 TODOS OS DIREITOS RESERVADOS.
