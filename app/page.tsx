@@ -65,7 +65,7 @@ export default function Home() {
       </section>
 
       {/* Prioridade Máxima Section */}
-      <section className="py-24 bg-[#111111]">
+      <section className="pt-24 pb-12 md:pb-24 bg-[#111111]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bebas mb-4 tracking-widest uppercase">
@@ -98,7 +98,7 @@ export default function Home() {
       </section>
 
       {/* Detalhes do Plano */}
-      <section id="planos" className="py-24 bg-[#000000]">
+      <section id="planos" className="py-12 md:py-24 bg-[#000000]">
         <div className="max-w-4xl mx-auto px-6">
           <div className="bg-[#ffffff] rounded-sm overflow-hidden shadow-2xl transform hover:-translate-y-2 transition-transform duration-500">
             <div className="bg-[#c40000] p-8 text-center">
@@ -109,9 +109,9 @@ export default function Home() {
             
             <div className="p-10 text-[#000000]">
               <div className="flex justify-center items-baseline mb-10">
-                <span className="text-xl font-bold mr-1">R$</span>
-                <span className="text-6xl font-bebas tracking-tighter">325,40</span>
-                <span className="text-lg font-bold text-gray-500 ml-2">/mês</span>
+                <span className="text-lg md:text-xl font-bold mr-1">R$</span>
+                <span className="text-5xl md:text-6xl font-bebas tracking-tighter">325,40</span>
+                <span className="text-base md:text-lg font-bold text-gray-500 ml-2">/mês</span>
               </div>
 
               <ul className="space-y-4 mb-10">
