@@ -111,25 +111,34 @@ export default function Home() {
             <div className="p-10 text-[#000000]">
               <div className="flex justify-center items-baseline mb-10">
                 <span className="text-2xl font-bold mr-1">R$</span>
-                <span className="text-8xl font-bebas tracking-tighter">189</span>
+                <span className="text-8xl font-bebas tracking-tighter">325,40</span>
                 <span className="text-xl font-bold text-gray-500 ml-2">/mês</span>
               </div>
 
               <ul className="space-y-4 mb-10">
-                <li className="flex items-center gap-3 font-bold border-b border-gray-100 pb-3">
-                  <span className="text-[#c40000]">✓</span> PRIORIDADE 1 (NÍVEL 0) NA COMPRA DE INGRESSOS
+                <li className="flex items-start gap-3 font-bold border-b border-gray-100 pb-3">
+                  <span className="text-[#c40000] mt-1">✓</span> 
+                  <span>Prioridade 1 na compra de ingressos para jogos no Maracanã como mandante e como visitante</span>
                 </li>
-                <li className="flex items-center gap-3 font-bold border-b border-gray-100 pb-3">
-                  <span className="text-[#c40000]">✓</span> 100% DE DESCONTO NO INGRESSO (SETOR NORTE/SUL)
+                <li className="flex items-start gap-3 font-bold border-b border-gray-100 pb-3">
+                  <span className="text-[#c40000] mt-1">✓</span> 
+                  <span>75% de desconto no valor da inteira</span>
                 </li>
-                <li className="flex items-center gap-3 font-bold border-b border-gray-100 pb-3">
-                  <span className="text-[#c40000]">✓</span> DIREITO A 3 CONVIDADOS COM 50% DE DESCONTO
+                <li className="flex items-start gap-3 font-bold border-b border-gray-100 pb-3">
+                  <span className="text-[#c40000] mt-1">✓</span> 
+                  <span>Plano limitado a 10.000 titulares, com garantia de compra de ingressos para o Maracanã em sua onda de prioridade</span>
                 </li>
-                <li className="flex items-center gap-3 font-bold border-b border-gray-100 pb-3">
-                  <span className="text-[#c40000]">✓</span> KIT BOAS-VINDAS "LENDAS DO MARACA" EXCLUSIVO
+                <li className="flex items-start gap-3 font-bold border-b border-gray-100 pb-3">
+                  <span className="text-[#c40000] mt-1">✓</span> 
+                  <span>Direito de contratação de até 3 convidados por R$50,00/mês cada, com compra na mesma prioridade do titular</span>
                 </li>
-                <li className="flex items-center gap-3 font-bold">
-                  <span className="text-[#c40000]">✓</span> PARTICIPAÇÃO EM SORTEIOS PARA EXPERIÊNCIAS NO GRAMADO
+                <li className="flex items-start gap-3 font-bold border-b border-gray-100 pb-3">
+                  <span className="text-[#c40000] mt-1">✓</span> 
+                  <span>Rating que valoriza o tempo de permanência</span>
+                </li>
+                <li className="flex items-start gap-3 font-bold">
+                  <span className="text-[#c40000] mt-1">✓</span> 
+                  <span>Direito a compra do Pacote Maracanã anual</span>
                 </li>
               </ul>
 
@@ -141,7 +150,7 @@ export default function Home() {
               </a>
               
               <p className="text-center mt-6 text-sm text-gray-500 font-bold uppercase tracking-widest">
-                ⏳ Oferta expira em 28 de fevereiro
+                ⏳ Adesões abertas até 28 de fevereiro
               </p>
             </div>
           </div>
