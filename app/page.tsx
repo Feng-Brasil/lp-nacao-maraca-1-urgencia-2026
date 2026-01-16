@@ -157,69 +157,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer Nação Maraca */}
-      <footer className="bg-[#000000] pt-12 pb-6 border-t border-[#c40000]/20">
+      {/* Footer Minimalista (Nação Maraca) */}
+      <footer className="bg-[#000000] py-12 border-t border-[#c40000]/20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-            <div className="col-span-1 md:col-span-1">
-              <img 
-                src="https://images.mengo.com.br/prod/assets/images/2025/logo-nacao.png" 
-                alt="Logo Nação" 
-                className="h-16 w-auto mb-6"
-              />
-              <p className="text-gray-400 text-sm leading-relaxed">
-                O programa de sócio-torcedor do Clube de Regatas do Flamengo. Jogue junto com o Mengão.
-              </p>
-            </div>
+          <div className="flex flex-col items-center text-center">
+            <img 
+              src="https://images.mengo.com.br/prod/assets/images/2025/logo-nacao.png" 
+              alt="Logo Nação" 
+              className="h-16 w-auto mb-8"
+            />
             
-            <div>
-              <h4 className="font-bebas text-xl tracking-widest mb-6 text-white uppercase">Nação</h4>
-              <ul className="space-y-3 text-sm text-gray-400">
-                <li><a href="https://nacao.flamengo.com.br/home" className="hover:text-[#c40000] transition-colors">Home</a></li>
-                <li><a href="https://nacao.flamengo.com.br/planos" className="hover:text-[#c40000] transition-colors">Planos</a></li>
-                <li><a href="https://nacao.flamengo.com.br/beneficios" className="hover:text-[#c40000] transition-colors">Benefícios</a></li>
-                <li><a href="https://nacao.flamengo.com.br/parceiros" className="hover:text-[#c40000] transition-colors">Parceiros</a></li>
-              </ul>
+            <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-10 text-sm font-medium uppercase tracking-widest text-gray-400">
+              <a href="https://nacao.flamengo.com.br/faq" className="hover:text-white transition-colors">Dúvidas Frequentes</a>
+              <a href="https://nacao.flamengo.com.br/fale-conosco" className="hover:text-white transition-colors">Fale Conosco</a>
+              <a href="https://nacao.flamengo.com.br/termos-e-condicoes" className="hover:text-white transition-colors">Termos e Condições</a>
+              <a href="https://nacao.flamengo.com.br/politica-de-privacidade" className="hover:text-white transition-colors">Política de Privacidade</a>
             </div>
 
-            <div>
-              <h4 className="font-bebas text-xl tracking-widest mb-6 text-white uppercase">Suporte</h4>
-              <ul className="space-y-3 text-sm text-gray-400">
-                <li><a href="https://nacao.flamengo.com.br/faq" className="hover:text-[#c40000] transition-colors">FAQ</a></li>
-                <li><a href="https://nacao.flamengo.com.br/contato" className="hover:text-[#c40000] transition-colors">Fale Conosco</a></li>
-                <li><a href="https://nacao.flamengo.com.br/termos" className="hover:text-[#c40000] transition-colors">Termos de Uso</a></li>
-                <li><a href="https://nacao.flamengo.com.br/privacidade" className="hover:text-[#c40000] transition-colors">Privacidade</a></li>
-              </ul>
+            <div className="flex items-center gap-8 mb-10 opacity-50 grayscale">
+              <img src="https://images.mengo.com.br/prod/assets/images/2025/logo-visa.png" alt="Visa" className="h-4 w-auto" />
+              <img src="https://images.mengo.com.br/prod/assets/images/2025/logo-mastercard.png" alt="Mastercard" className="h-6 w-auto" />
+              <img src="https://images.mengo.com.br/prod/assets/images/2025/logo-pix.png" alt="Pix" className="h-4 w-auto" />
             </div>
 
-            <div>
-              <h4 className="font-bebas text-xl tracking-widest mb-6 text-white uppercase">Redes Sociais</h4>
-              <div className="flex gap-4">
-                <a href="https://twitter.com/NacaoFlamengo" className="w-10 h-10 rounded-full bg-[#111111] border border-white/10 flex items-center justify-center hover:bg-[#c40000] transition-all">
-                  <span className="text-xs">TW</span>
-                </a>
-                <a href="https://www.instagram.com/nacaoflamengo/" className="w-10 h-10 rounded-full bg-[#111111] border border-white/10 flex items-center justify-center hover:bg-[#c40000] transition-all">
-                  <span className="text-xs">IG</span>
-                </a>
-                <a href="https://www.facebook.com/NacaoFlamengo" className="w-10 h-10 rounded-full bg-[#111111] border border-white/10 flex items-center justify-center hover:bg-[#c40000] transition-all">
-                  <span className="text-xs">FB</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-6">
-              <img src="https://images.mengo.com.br/prod/assets/images/2025/logo-crf.png" alt="CRF" className="h-10 w-auto opacity-50" />
-              <p className="text-[10px] text-gray-500 uppercase tracking-widest leading-tight">
+            <div className="flex flex-col md:flex-row items-center gap-6 pt-8 border-t border-white/5 w-full justify-center">
+              <img src="https://images.mengo.com.br/prod/assets/images/2025/logo-crf.png" alt="CRF" className="h-12 w-auto opacity-40" />
+              <p className="text-[10px] text-gray-500 uppercase tracking-[0.2em] leading-relaxed max-w-xs md:text-left">
                 © 2025 CLUBE DE REGATAS DO FLAMENGO. <br />
                 TODOS OS DIREITOS RESERVADOS.
               </p>
-            </div>
-            <div className="flex items-center gap-4">
-              <img src="https://images.mengo.com.br/prod/assets/images/2025/logo-visa.png" alt="Visa" className="h-4 w-auto grayscale opacity-50" />
-              <img src="https://images.mengo.com.br/prod/assets/images/2025/logo-mastercard.png" alt="Mastercard" className="h-6 w-auto grayscale opacity-50" />
-              <img src="https://images.mengo.com.br/prod/assets/images/2025/logo-pix.png" alt="Pix" className="h-4 w-auto grayscale opacity-50" />
             </div>
           </div>
         </div>
