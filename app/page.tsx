@@ -1,17 +1,28 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#171717] text-[#ffffff] font-sans selection:bg-[#2857b2] selection:text-white">
+    <main className="min-h-screen bg-[#000000] text-[#ffffff] font-sans selection:bg-[#c40000] selection:text-white">
+      {/* Import Bebas Neue via Google Fonts */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        .font-bebas { font-family: 'Bebas Neue', sans-serif; }
+      `}} />
+
       {/* Header / Navigation */}
-      <nav className="fixed w-full z-50 bg-[#040f24]/90 backdrop-blur-md border-b border-[#2857b2]/30">
+      <nav className="fixed w-full z-50 bg-[#000000]/95 backdrop-blur-md border-b border-[#c40000]/30">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="text-2xl font-black tracking-tighter uppercase italic" style={{ fontFamily: 'system-ui, "Big Shoulders Display"' }}>
-              NAÇÃO <span className="text-[#2857b2]">MARACA</span>
+          <div className="flex items-center gap-4">
+            <img 
+              src="https://images.mengo.com.br/prod/assets/images/2025/logo-nacao.png" 
+              alt="Logo Nação" 
+              className="h-12 w-auto"
+            />
+            <span className="text-2xl font-bebas tracking-wider uppercase hidden sm:block">
+              NAÇÃO <span className="text-[#c40000]">MARACA</span>
             </span>
           </div>
           <a 
             href="#planos" 
-            className="hidden md:block bg-[#ffffff] text-[#212121] px-6 py-2 rounded-full font-bold text-sm hover:bg-[#2857b2] hover:text-white transition-all duration-300"
+            className="bg-[#c40000] text-white px-6 py-2 rounded-sm font-bebas text-lg tracking-widest hover:bg-white hover:text-[#c40000] transition-all duration-300"
           >
             ASSINE AGORA
           </a>
@@ -20,34 +31,34 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-30">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#171717] via-transparent to-[#040f24]"></div>
-          <div className="absolute inset-0 bg-[#2857b2]/10 mix-blend-overlay"></div>
+        <div className="absolute inset-0 z-0 opacity-40">
+          <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-[#c40000]/20"></div>
+          <div className="absolute inset-0 bg-[#c40000]/5 mix-blend-overlay"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-block bg-[#2857b2] text-white px-4 py-1 rounded-sm mb-6 text-sm font-bold tracking-widest uppercase">
+            <div className="inline-block bg-[#c40000] text-white px-4 py-1 rounded-sm mb-6 text-sm font-bold tracking-widest uppercase">
               ⚠️ URGÊNCIA TEMPORADA 2026
             </div>
-            <h1 className="text-5xl md:text-8xl font-black leading-none mb-6 italic uppercase" style={{ fontFamily: 'system-ui, "Big Shoulders Display"' }}>
+            <h1 className="text-6xl md:text-9xl font-bebas leading-[0.9] mb-6 uppercase tracking-tight">
               O TEMPLO TE <br />
-              <span className="text-[#2857b2]">CONVOCA.</span>
+              <span className="text-[#c40000]">CONVOCA.</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed font-light">
               A história não espera. Garanta sua prioridade máxima no Maracanã para 2026. 
-              O prazo final para o plano <span className="text-white font-bold underline decoration-[#2857b2]">Nação Maraca 1</span> se encerra em 28 de fevereiro.
+              O prazo final para o plano <span className="text-white font-bold underline decoration-[#c40000]">Nação Maraca 1</span> se encerra em 28 de fevereiro.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="#planos" 
-                className="bg-[#ffffff] text-[#212121] text-center px-8 py-4 rounded-md font-black text-lg hover:bg-[#2857b2] hover:text-white transition-all transform hover:scale-105 active:scale-95"
+                className="bg-[#c40000] text-white text-center px-10 py-4 rounded-sm font-bebas text-2xl tracking-widest hover:bg-white hover:text-[#c40000] transition-all transform hover:scale-105 active:scale-95"
               >
                 SEJA NAÇÃO MARACA 1 AGORA!
               </a>
-              <div className="flex items-center gap-3 px-4 py-2 border border-white/10 rounded-md bg-white/5">
-                <span className="text-[#2857b2] text-2xl animate-pulse">●</span>
-                <span className="text-sm font-medium">Vagas limitadas para 2026</span>
+              <div className="flex items-center gap-3 px-4 py-2 border border-white/10 rounded-sm bg-white/5">
+                <span className="text-[#c40000] text-2xl animate-pulse">●</span>
+                <span className="text-sm font-medium uppercase tracking-tighter">Vagas limitadas para 2026</span>
               </div>
             </div>
           </div>
@@ -55,33 +66,33 @@ export default function Home() {
       </section>
 
       {/* Benefícios */}
-      <section className="py-24 bg-[#040f24]">
+      <section className="py-24 bg-[#111111]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 uppercase tracking-tight">VANTAGENS LENDÁRIAS</h2>
-            <div className="h-1 w-24 bg-[#2857b2] mx-auto"></div>
+            <h2 className="text-4xl md:text-6xl font-bebas mb-4 tracking-widest uppercase">VANTAGENS LENDÁRIAS</h2>
+            <div className="h-1 w-24 bg-[#c40000] mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-8 bg-[#171717] border border-[#2857b2]/20 rounded-xl hover:border-[#2857b2] transition-colors group">
+            <div className="p-8 bg-[#000000] border border-[#c40000]/20 rounded-sm hover:border-[#c40000] transition-colors group">
               <div className="text-4xl mb-6 group-hover:scale-110 transition-transform">🎟️</div>
-              <h3 className="text-xl font-bold mb-4 uppercase text-[#2857b2]">Prioridade 0 (Máxima)</h3>
+              <h3 className="text-2xl font-bebas mb-4 tracking-widest uppercase text-[#c40000]">Prioridade 0 (Máxima)</h3>
               <p className="text-gray-400 leading-relaxed">
                 Seja o primeiro da fila. Ingressos garantidos antes de qualquer outro plano para todas as competições no Maracanã.
               </p>
             </div>
 
-            <div className="p-8 bg-[#171717] border border-[#2857b2]/20 rounded-xl hover:border-[#2857b2] transition-colors group">
+            <div className="p-8 bg-[#000000] border border-[#c40000]/20 rounded-sm hover:border-[#c40000] transition-colors group">
               <div className="text-4xl mb-6 group-hover:scale-110 transition-transform">🏟️</div>
-              <h3 className="text-xl font-bold mb-4 uppercase text-[#2857b2]">Experiência no Templo</h3>
+              <h3 className="text-2xl font-bebas mb-4 tracking-widest uppercase text-[#c40000]">Experiência no Templo</h3>
               <p className="text-gray-400 leading-relaxed">
                 Acesso exclusivo a áreas premium e tours históricos no estádio mais icônico do planeta. Sinta a lenda de perto.
               </p>
             </div>
 
-            <div className="p-8 bg-[#171717] border border-[#2857b2]/20 rounded-xl hover:border-[#2857b2] transition-colors group">
+            <div className="p-8 bg-[#000000] border border-[#c40000]/20 rounded-sm hover:border-[#c40000] transition-colors group">
               <div className="text-4xl mb-6 group-hover:scale-110 transition-transform">💎</div>
-              <h3 className="text-xl font-bold mb-4 uppercase text-[#2857b2]">Manto e Cashback</h3>
+              <h3 className="text-2xl font-bebas mb-4 tracking-widest uppercase text-[#c40000]">Manto e Cashback</h3>
               <p className="text-gray-400 leading-relaxed">
                 Descontos agressivos em lojas oficiais e cashback em parceiros que transformam sua mensalidade em investimento.
               </p>
@@ -91,43 +102,43 @@ export default function Home() {
       </section>
 
       {/* Detalhes do Plano */}
-      <section id="planos" className="py-24 bg-[#171717]">
+      <section id="planos" className="py-24 bg-[#000000]">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="bg-[#ffffff] rounded-2xl overflow-hidden shadow-2xl transform hover:-translate-y-2 transition-transform duration-500">
-            <div className="bg-[#2857b2] p-8 text-center">
-              <h3 className="text-white text-3xl font-black uppercase italic" style={{ fontFamily: 'system-ui, "Big Shoulders Display"' }}>
+          <div className="bg-[#ffffff] rounded-sm overflow-hidden shadow-2xl transform hover:-translate-y-2 transition-transform duration-500">
+            <div className="bg-[#c40000] p-8 text-center">
+              <h3 className="text-white text-4xl font-bebas tracking-widest uppercase">
                 NAÇÃO MARACA 1 - TEMPORADA 2026
               </h3>
-              <p className="text-white/80 mt-2 font-medium">O plano definitivo para quem vive o Flamengo</p>
+              <p className="text-white/90 mt-2 font-bold uppercase text-sm tracking-widest">O plano definitivo para quem vive o Flamengo</p>
             </div>
             
-            <div className="p-10 text-[#212121]">
+            <div className="p-10 text-[#000000]">
               <div className="flex justify-center items-baseline mb-10">
                 <span className="text-2xl font-bold mr-1">R$</span>
-                <span className="text-7xl font-black tracking-tighter">189</span>
+                <span className="text-8xl font-bebas tracking-tighter">189</span>
                 <span className="text-xl font-bold text-gray-500 ml-2">/mês</span>
               </div>
 
               <ul className="space-y-4 mb-10">
-                <li className="flex items-center gap-3 font-medium border-b border-gray-100 pb-3">
-                  <span className="text-[#2857b2] font-bold">✓</span> Prioridade 1 (Nível 0) na compra de ingressos
+                <li className="flex items-center gap-3 font-bold border-b border-gray-100 pb-3">
+                  <span className="text-[#c40000]">✓</span> PRIORIDADE 1 (NÍVEL 0) NA COMPRA DE INGRESSOS
                 </li>
-                <li className="flex items-center gap-3 font-medium border-b border-gray-100 pb-3">
-                  <span className="text-[#2857b2] font-bold">✓</span> 100% de desconto no ingresso (Setor Norte/Sul)
+                <li className="flex items-center gap-3 font-bold border-b border-gray-100 pb-3">
+                  <span className="text-[#c40000]">✓</span> 100% DE DESCONTO NO INGRESSO (SETOR NORTE/SUL)
                 </li>
-                <li className="flex items-center gap-3 font-medium border-b border-gray-100 pb-3">
-                  <span className="text-[#2857b2] font-bold">✓</span> Direito a 3 convidados com 50% de desconto
+                <li className="flex items-center gap-3 font-bold border-b border-gray-100 pb-3">
+                  <span className="text-[#c40000]">✓</span> DIREITO A 3 CONVIDADOS COM 50% DE DESCONTO
                 </li>
-                <li className="flex items-center gap-3 font-medium border-b border-gray-100 pb-3">
-                  <span className="text-[#2857b2] font-bold">✓</span> Kit Boas-Vindas "Lendas do Maraca" exclusivo
+                <li className="flex items-center gap-3 font-bold border-b border-gray-100 pb-3">
+                  <span className="text-[#c40000]">✓</span> KIT BOAS-VINDAS "LENDAS DO MARACA" EXCLUSIVO
                 </li>
-                <li className="flex items-center gap-3 font-medium">
-                  <span className="text-[#2857b2] font-bold">✓</span> Participação em sorteios para experiências no gramado
+                <li className="flex items-center gap-3 font-bold">
+                  <span className="text-[#c40000]">✓</span> PARTICIPAÇÃO EM SORTEIOS PARA EXPERIÊNCIAS NO GRAMADO
                 </li>
               </ul>
 
               <form action="#">
-                <button className="w-full bg-[#2857b2] text-white py-5 rounded-xl font-black text-xl hover:bg-[#040f24] transition-colors shadow-lg shadow-[#2857b2]/20">
+                <button className="w-full bg-[#000000] text-white py-5 rounded-sm font-bebas text-3xl tracking-widest hover:bg-[#c40000] transition-colors shadow-lg">
                   QUERO MINHA VAGA EM 2026!
                 </button>
               </form>
@@ -141,11 +152,18 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#040f24] py-16 border-t border-[#2857b2]/20">
+      <footer className="bg-[#000000] py-16 border-t border-[#c40000]/20">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
-            <div className="text-2xl font-black tracking-tighter uppercase italic mb-2">
-              NAÇÃO <span className="text-[#2857b2]">MARACA</span>
+            <div className="flex items-center justify-center md:justify-start gap-4 mb-4">
+              <img 
+                src="https://images.mengo.com.br/prod/assets/images/2025/logo-nacao.png" 
+                alt="Logo Nação" 
+                className="h-10 w-auto"
+              />
+              <span className="text-2xl font-bebas tracking-widest uppercase">
+                NAÇÃO <span className="text-[#c40000]">MARACA</span>
+              </span>
             </div>
             <p className="text-gray-500 text-sm max-w-xs">
               O Maracanã é a nossa casa. A Nação é a nossa alma. Faça parte da história viva do futebol mundial.
@@ -153,13 +171,13 @@ export default function Home() {
           </div>
           
           <div className="flex gap-8 text-sm font-bold text-gray-400">
-            <a href="#" className="hover:text-[#2857b2] transition-colors">TERMOS</a>
-            <a href="#" className="hover:text-[#2857b2] transition-colors">PRIVACIDADE</a>
-            <a href="#" className="hover:text-[#2857b2] transition-colors">CONTATO</a>
+            <a href="#" className="hover:text-[#c40000] transition-colors uppercase tracking-widest">Termos</a>
+            <a href="#" className="hover:text-[#c40000] transition-colors uppercase tracking-widest">Privacidade</a>
+            <a href="#" className="hover:text-[#c40000] transition-colors uppercase tracking-widest">Contato</a>
           </div>
 
           <div className="text-center md:text-right">
-            <p className="text-xs text-gray-600">
+            <p className="text-xs text-gray-600 uppercase tracking-widest font-bold">
               © 2024 Nação Maraca. Todos os direitos reservados. <br />
               Desenvolvido para amantes do Templo.
             </p>
