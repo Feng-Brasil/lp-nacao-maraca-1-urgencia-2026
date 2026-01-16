@@ -163,7 +163,7 @@ export default function Home() {
             <img 
               src="https://images.mengo.com.br/prod/assets/images/2025/logo-nacao.png" 
               alt="Logo Nação" 
-              className="h-16 w-auto mb-8"
+              className="w-auto mb-8"
             />
             
             <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-10 text-sm font-medium uppercase tracking-widest text-gray-400">
