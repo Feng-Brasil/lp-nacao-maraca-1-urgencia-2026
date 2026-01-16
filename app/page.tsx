@@ -28,12 +28,12 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-12 md:pt-48 md:pb-16 overflow-hidden min-h-[85vh] flex items-center">
-        {/* Background Image - Torcida do Flamengo no Maracanã */}
+        {/* Background Image - Atualizado conforme solicitação */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1624361514002-998897950361?q=80&w=2070&auto=format&fit=crop" 
-            alt="Torcida do Flamengo no Maracanã"
-            className="w-full h-full object-cover grayscale-[0.5] brightness-[0.3]"
+            src="https://images.mengo.com.br/prod/assets/images/2025/img-bg-rtn.png" 
+            alt="Background Nação"
+            className="w-full h-full object-cover grayscale-[0.3] brightness-[0.4]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/60 to-[#c40000]/30"></div>
           <div className="absolute inset-0 bg-[#c40000]/10 mix-blend-multiply"></div>
