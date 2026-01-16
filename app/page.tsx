@@ -64,37 +64,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Benefícios */}
+      {/* Prioridade Máxima Section (Substituindo Benefícios) */}
       <section className="py-24 bg-[#111111]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bebas mb-4 tracking-widest uppercase">VANTAGENS LENDÁRIAS</h2>
+            <h2 className="text-4xl md:text-6xl font-bebas mb-4 tracking-widest uppercase">
+              Em 2026, a prioridade máxima no Nação são os que jogam sempre junto
+            </h2>
             <div className="h-1 w-24 bg-[#c40000] mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-8 bg-[#000000] border border-[#c40000]/20 rounded-sm hover:border-[#c40000] transition-colors group">
-              <div className="text-4xl mb-6 group-hover:scale-110 transition-transform">🎟️</div>
-              <h3 className="text-2xl font-bebas mb-4 tracking-widest uppercase text-[#c40000]">Prioridade 0 (Máxima)</h3>
-              <p className="text-gray-400 leading-relaxed">
-                Seja o primeiro da fila. Ingressos garantidos antes de qualquer outro plano para todas as competições no Maracanã.
-              </p>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <img 
+                src="https://images.mengo.com.br/prod/assets/images/2025/landing/exp-ingressos.png" 
+                alt="Experiência Ingressos Nação" 
+                className="w-full h-auto rounded-sm shadow-2xl border border-[#c40000]/20"
+              />
             </div>
-
-            <div className="p-8 bg-[#000000] border border-[#c40000]/20 rounded-sm hover:border-[#c40000] transition-colors group">
-              <div className="text-4xl mb-6 group-hover:scale-110 transition-transform">🏟️</div>
-              <h3 className="text-2xl font-bebas mb-4 tracking-widest uppercase text-[#c40000]">Experiência no Templo</h3>
-              <p className="text-gray-400 leading-relaxed">
-                Acesso exclusivo a áreas premium e tours históricos no estádio mais icônico do planeta. Sinta a lenda de perto.
+            <div className="order-1 md:order-2 space-y-8">
+              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed font-light">
+                Fazer parte do <span className="text-white font-bold">Nação Maraca 1</span> é privilégio reservado para aqueles que estão com o Flamengo em toda temporada. E quem está neste plano tem a compra do ingresso garantida nos momentos decisivos.
               </p>
-            </div>
-
-            <div className="p-8 bg-[#000000] border border-[#c40000]/20 rounded-sm hover:border-[#c40000] transition-colors group">
-              <div className="text-4xl mb-6 group-hover:scale-110 transition-transform">💎</div>
-              <h3 className="text-2xl font-bebas mb-4 tracking-widest uppercase text-[#c40000]">Manto e Cashback</h3>
-              <p className="text-gray-400 leading-relaxed">
-                Descontos agressivos em lojas oficiais e cashback em parceiros que transformam sua mensalidade em investimento.
-              </p>
+              <a 
+                href="https://nacao.flamengo.com.br/checkout/cart/subscribe/1c9b172de533f5422fd04b7eaa056ecc" 
+                className="inline-block bg-[#c40000] text-white px-10 py-4 rounded-sm font-bebas text-2xl tracking-widest hover:bg-white hover:text-[#c40000] transition-all transform hover:scale-105"
+              >
+                Seja Nação Maraca 1 agora!
+              </a>
             </div>
           </div>
         </div>
